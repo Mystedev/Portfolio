@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" id="theme">
+</head>
+<body>
+    <!-- MENU NAVEGACION -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Portfolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION TARJETA INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <h1>Dennys Lazaro</h1>
+            <h2>Portfolio personal 👨‍💻</h2>
+            <img src="Me.jpg" title="Dennys" alt="Icono">
+            <div class="redes">
+                <a href="https://www.facebook.com/dennys.pezmoya/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/d.n.n.y.s09?igsh=NThvamNvMG5kMDV1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dennys-moya-93386927a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <article class="columna-presentacion">
+            <h1>Presentación👨‍💻</h1>
+            <p>Hey, soy Dennys , estudiante de Desarrollo de  software.</p>
+            <button class="buttonDownload" onclick="window.alert('Aun no se puede descargar.')">Descarga mi CV <i class="fa-solid fa-download"></i> </button>
+        </article>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí👨‍💻</h2>
+            <p>Hola,soy<span> Dennys.</span>Me gusta quedar para tomar un <span>cafe☕</span> por supuesto , a quien no le gusta un cafe calentito de vez en cuando y compartir un rato con los amigos🤷? Al menos a mi me  despeja mucho interactuar de vez en cuando con mis amigos mas cercanos y hablar de las cosas mas  profundas y absurdas posibles🤣. Si, soy moderadamente social y sino salgo a que me de el  aire y caminar 5km🏃‍♂️ diarios como suele ser , siempre tengo un hueco en los <span>videojuegos🎮</span> online en los que disfrutar de igual manera un tiempo con alguien.</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-01-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +34 642 664 859
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            moyadeni267@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            La Seu d'Urgell, Lleida(ESPAÑA)
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Tecnologias -->
+                <div class="col">
+                    <h3>Tecnologias</h3>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>XML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Aptitudes -->
+                <div class="col">
+                    <h3>Aptitudes</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Educación Secundaria</h4>
+                        <span class="casa">Institut Joan Brudieu</span>
+                        <span class="fecha">2014-2018</span>
+                        <p>En estos años aprendí todos las bases cruciales que se aprenden en  la secundaria , asi como conocer la geografia, nuestra propia lengua, idiomas externos , entorno social y orientarnos de cara a nuestros futuros estudios y entorno laboral.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SMX [IT] 
+                        Tecnico Medio Informático</h4>
+                        <span class="casa">Institut Joan Brudieu</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>En el medio de informática, aprendi  las bases sobre comunicación efectiva, pensamiento crítico y aprendizaje autónomo. A nivel profesional, adquiri ciertas habilidades en programación, administración de sistemas, bases de datos, diseño web, seguridad informática y hardware. Estas habilidades nos  preparan para ingresar al campo laboral, brindando conocimientos sólidos en tecnologías de la información y la capacidad de adaptarse a un entorno en constante evolución.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>DAM [IT] Desarrollo Aplicaciones Multiplataforma</h4>
+                        <span class="casa">Institut Joan Brudieu</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>En este grado superior aprendo de manera avanzada sobre el desarrollo de aplicaciones moviles y de escritorio, con prepearación laboral para crear y desarrollar productos,administrar sistemas y conocimientos de hardware de manera de detallada.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4 id="titulo-grado">SMX[Titulo Grado Medio]</h4>
+                        <span class="casa">Institu Joan Brudieu</span>
+                        <p>Competencias Profesionales...</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4 id="titulo-grado">DAM[Titulo Grado Superior]</h4>
+                        <span class="casa">Institut Joan Brudieu</span>
+                        <p>Competencias Profesionales</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Escribe  aqui</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">0000 - 0000</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Escribe aqui</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">0000 - 0000</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Escribe aqui</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">0000 -  0000</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="miBoton" onclick="validateFormContacto()">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                La Seu d'Urgell/Lleida
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +34 642 664 859
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: moyadeni267@gmail.com moya-deny14@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
